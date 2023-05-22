@@ -1,0 +1,214 @@
+@font-face {
+    font-family: milly;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Light_red: hsl(0, 100%, 67%);
+    --Orangey: hsl(39, 100%, 56%);
+ --Green_teal: hsl(166, 100%, 37%);
+  --Cobalt_blue: hsl(234, 85%, 45%);
+  /* gradient */
+  --Light_slate_blue: hsl(252, 100%, 67%);
+ --Light_royal_blue: hsl(241, 81%, 54%);
+
+--Violet_blue: hsla(256, 72%, 46%, 1);
+ --Persian_blue: hsla(241, 72%, 46%, 0);
+ /* neutral */
+
+ --White: hsl(0, 0%, 100%);
+--Pale_blue: hsl(221, 100%, 96%);
+--Light_lavender: hsl(241, 100%, 89%);
+ --Dark_gray_blue: hsl(224, 30%, 27%);
+
+
+}
+body{
+    background-color: var(--Persian_blue);
+    display: flex;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    height: 90vh;
+    font-family: milly, 'Times New Roman', Times, serif;
+    /* background-image: linear-gradient(var(--Persian_blue),var(--White)); */
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+main{
+    display: flex;
+    width: 450px;
+    align-self: center;
+    /* height: 50%; */
+
+    border-radius: 15px;
+    box-shadow: 3px 5px 30px var(--Dark_gray_blue);
+}
+.left{
+    color: var(--White);
+    text-align: center;
+    /* margin: auto; */
+    width: 50%;
+    border-radius: 15px;
+    padding: 20px;
+    background-image: linear-gradient(var(--Light_slate_blue), var(--Cobalt_blue));
+}
+.right{
+    width: 50%;
+    background-color: var(--White);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.circle{
+    border-radius: 50%;
+    /* width: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    height: 100px;
+    width: 100px;
+    /* align-self: center; */
+    justify-content: center;
+    /* background-image: linear-gradient (var(--Cobalt_blue)); */
+    /* background-color: var(--Cobalt_blue); */
+    background-image: linear-gradient(var(--Violet_blue), var(--Persian_blue));
+}
+.scores{
+    display: flex;
+    justify-content: space-around;
+    /* width: 50%; */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.number{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.para{
+    font-size: 0.7rem;
+    padding: 10px;
+}
+.crew{
+    font-size: 0.7rem;
+    color: hsla(0, 0%, 100%, 0.365);
+}
+.result{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.reaction{
+    color: var(--Light_red);
+    background-color: hsla(17, 100%, 67%, 0.15);
+}
+.memory{
+    color: var(--Orangey);
+    background-color: hsla(17, 100%, 67%, 0.05);
+}
+.verbal{
+    color: var(--Green_teal);
+    background-color: hsla(169, 94%, 49%, 0.046);
+
+}
+.visual{
+    background-color:hsla(252, 100%, 67%, 0.088);
+    color: var(--Light_slate_blue);
+
+}
+button{
+    color: var(--White);
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 2rem;
+    background-color: var(--Dark_gray_blue);
+}
+.num{
+    color: var(--Dark_gray_blue);
+}
+button:hover{
+    background-color: var(--Light_royal_blue);
+}
+.summary{
+    font-size: 0.9rem;
+    color: var(--Dark_gray_blue);
+
+}
+@media  (max-width:560px) {
+    main{
+        flex-direction: column;
+        width: 100%;
+        /* justify-content: center; */
+        /* align-items:center ; */
+    }
+    .left{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 100%;
+        height: 45%;
+    }
+    .right{
+        width: 100%;
+        height: 55%;
+        padding: 30px;
+        
+        /* justify-content: space-around; */
+    }
+    .result{
+        font-size: 1.4rem;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+    }
+    .scores{
+        margin-bottom: 5%;
+        height: 45px;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .para{
+        width: 85%;
+        align-self: center;
+        margin: auto;
+        font-size: 1.1rem;
+        color: var(--Pale_blue);
+    }
+    .summary{
+        margin-bottom: 10%;
+    }
+    .result{
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
